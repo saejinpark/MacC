@@ -36,7 +36,7 @@ struct WindIndicator: View {
                 
                 ApparentWindMarker(diameter: diameter, degree: apparentWindDegree - compassDegree, windOffset: windOffset)
                 
-                Boom(diameter: diameter, degree: boomAngle - compassDegree, center: center)
+                Boom(diameter: diameter, degree: boomAngle - course - compassDegree, center: center)
                     .rotationEffect(Angle(degrees: course))
                     
             }
